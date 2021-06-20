@@ -14,6 +14,14 @@ def local_file_loader(json_file_path):
 
 
 class LocalFileLoader(Loader):
+    """
+    Loader for a timeline data stored in a file on the local filesystem.
+
+    The loading is triggered by a direct call to the ``LocalFileLoader`` instance.
+
+    :param json_file_path: path to the JSON file storing the *timeline* data
+    :param file_reader: function reading the file and providing a ``dict`` object
+    """
 
     @property
     def json_data(self):

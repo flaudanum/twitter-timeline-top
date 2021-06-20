@@ -5,15 +5,16 @@ from typing import Optional
 APP_EXCEPTIONS = ValueError
 
 
-def process(err: Exception, args):
+def process(err: Exception, script_args):
     """
     Manage exceptions raised within the application by providing an explicit message to the user.
 
     :param err: the raised exception
+    :param script_args: CLI named arguments
     :return: ``True`` if the exception was managed else false
     """
     if 'invalid literal for int()' in err.args[0]:
-        stderr.write(f'top-tweeter: argument \'top\' must be an integer: \'{args.top}\'\n\n')
+        stderr.write(f'top-tweeter: argument \'top\' must be an integer: \'{script_args.top}\'\n\n')
         return True
 
     return False

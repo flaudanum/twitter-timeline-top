@@ -1,7 +1,7 @@
 import pandas as pd
 
 from loader.loader import Loader
-from timeline_parser import Ranker
+from ranker import Ranker
 
 
 class FakeLoader(Loader):

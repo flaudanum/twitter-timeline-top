@@ -2,11 +2,12 @@ import pandas as pd
 
 
 def pretty_output(top_df: pd.DataFrame):
-    output_lines =[]
+    """
+    Console pretty output
 
-    output_lines.append(
-        f'The {top_df.shape[0]} most present users in the timeline are:\n'
-    )
+    :param top_df: table with the top users
+    """
+    output_lines = [f'The {top_df.shape[0]} most present users in the timeline are:\n']
 
     for _, row in top_df.iterrows():
         output_lines.append(

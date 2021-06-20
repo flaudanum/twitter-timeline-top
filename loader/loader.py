@@ -2,6 +2,9 @@ from abc import ABC, abstractmethod
 
 
 class Loader(ABC):
+    """
+    Base class for loading Tweeter timelines
+    """
 
     @property
     @abstractmethod

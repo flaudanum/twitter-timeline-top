@@ -1,15 +1,12 @@
-import json
 from argparse import ArgumentParser
-from pathlib import Path
-from sys import stderr
 
 import errors
 
 # Right now this script only retrieves data from JSON files in the locql file system but in the future this data should
 # be requested from the Tweeter API. This hardcoded parameter would then be set from a CLI argument --source.
 from loader.local_file_loader import LocalFileLoader
-from tests.output import pretty_output
-from timeline_parser import Ranker
+from output import pretty_output
+from ranker import Ranker
 
 data_source = 'file system'
 

@@ -8,6 +8,11 @@ from loader.loader import Loader
 class Ranker:
 
     def __init__(self, loader: Loader):
+        """
+        Performs a ranking of the most present (based on the number of tweets) users in the timeline
+
+        :param loader: data loader
+        """
         self._loader = loader
 
     @cache
