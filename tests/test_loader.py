@@ -1,9 +1,9 @@
 import pandas as pd
 import pytest
 
-from loader.local_file_loader import LocalFileLoader
 
 from tests import tweets_fixture
+from top_tweeters import LocalFileLoader
 
 
 def fake_file_loader(json_file_path: str):

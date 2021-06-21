@@ -2,7 +2,7 @@ from functools import cache
 
 import pandas as pd
 
-from loader.loader import Loader
+from top_tweeters.loader.loader import Loader
 
 
 class Ranker:

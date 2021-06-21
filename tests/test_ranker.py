@@ -1,7 +1,7 @@
 import pandas as pd
 
-from loader.loader import Loader
-from ranker import Ranker
+from top_tweeters.loader.loader import Loader
+from top_tweeters.ranker import Ranker
 
 
 class FakeLoader(Loader):

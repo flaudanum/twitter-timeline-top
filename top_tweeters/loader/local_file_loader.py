@@ -3,7 +3,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from loader.loader import Loader
+from top_tweeters.loader.loader import Loader
 
 
 def local_file_loader(json_file_path):

@@ -1,13 +1,12 @@
 from argparse import ArgumentParser
 
-import errors
+from top_tweeters import errors
+from top_tweeters.loader.local_file_loader import LocalFileLoader
+from top_tweeters.output import pretty_output
+from top_tweeters.ranker import Ranker
 
 # Right now this script only retrieves data from JSON files in the locql file system but in the future this data should
 # be requested from the Tweeter API. This hardcoded parameter would then be set from a CLI argument --source.
-from loader.local_file_loader import LocalFileLoader
-from output import pretty_output
-from ranker import Ranker
-
 data_source = 'file system'
 
 
@@ -45,7 +44,3 @@ def main():
 
         # The exception was not managed
         raise err
-
-
-if __name__ == '__main__':
-    main()
