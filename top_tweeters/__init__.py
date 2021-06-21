@@ -6,7 +6,7 @@ from top_tweeters.output import pretty_output
 from top_tweeters.ranker import Ranker
 
 # Right now this script only retrieves data from JSON files in the locql file system but in the future this data should
-# be requested from the Tweeter API. This hardcoded parameter would then be set from a CLI argument --source.
+# be requested from the Twitter API. This hardcoded parameter would then be set from a CLI argument --source.
 data_source = 'file system'
 
 

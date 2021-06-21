@@ -14,7 +14,7 @@ def process(err: Exception, script_args):
     :return: ``True`` if the exception was managed else false
     """
     if 'invalid literal for int()' in err.args[0]:
-        stderr.write(f'top-tweeter: argument \'top\' must be an integer: \'{script_args.top}\'\n\n')
+        stderr.write(f'top-tweeters: argument \'top\' must be an integer: \'{script_args.top}\'\n\n')
         return True
 
     return False

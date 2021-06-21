@@ -1,4 +1,4 @@
-# Top Tweeter users
+# Top Twitter users
 
 ## Dev environment
 

@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 
 class Loader(ABC):
     """
-    Base class for loading Tweeter timelines
+    Base class for loading Twitter timelines
     """
 
     @property
